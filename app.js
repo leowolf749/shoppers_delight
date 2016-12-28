@@ -20,6 +20,26 @@ let masks = [
         name: 'Bunny Hood',
         price: '50 rupees',
     },
+    {
+        name: 'Mask of Truth',
+        price: '100 rupees',
+    },
+        {
+        name: 'Gerudo Mask',
+        price: '200 rupees',
+    },
+        {
+        name: 'Goron Mask',
+        price: '200 rupees',
+    },
+        {
+        name: 'Zora Mask',
+        price: '200 rupees',
+    },
+        {
+        name: 'Majoras Mask',
+        price: '10,000 rupees',
+    },
 
 ];
 
