@@ -2,8 +2,16 @@
 
 <html>
     <head>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/mustache.js/2.3.0/mustache.min.js"></script>
         <script src="app.js"></script>
+        <link rel="stylesheet" href="main.css">
+
+        <script id="mask-template" type="x-mustache-template">
+            <p>{{ name }}</p>
+            <p>{{ price }}</p>
+        </script>
     </head>
+    
     <body>
         <h1>Happy Mask Shop</h1>
         <p>..."you've met with a terrible fate, haven't you?"...</p>
