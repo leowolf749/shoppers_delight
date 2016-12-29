@@ -1,0 +1,18 @@
+@import 'node_modules/foundation-sites/scss/foundation';
+
+@include foundation-global-styles;
+@include foundation-grid;
+
+h1 {
+    background-color: indigo;
+    color: mediumpurple;
+    font-size: 2em;
+    border: 10px solid indianred;
+    text-align: center;
+
+    .quote {
+        font-size: .4em;
+        color: floralwhite;
+        margin: 2px;
+    }
+}

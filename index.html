@@ -7,22 +7,26 @@
         <link rel="stylesheet" href="main.css">
 
         <script id="mask-template" type="x-mustache-template">
+            <img src={{ image }}/>
             <p>{{ name }}</p>
             <p>{{ price }}</p>
-            <button>add to cart</button>
+            <button class='add'>add to cart</button>
         </script>
     </head>
     
     <body>
-        <h1>Happy Mask Shop</h1>
-        <p>..."you've met with a terrible fate, haven't you?"...</p>
+        <h1>Happy Mask Shop
+            <p class='quote'>...you've met with a terrible fate, haven't you?...</p>
+        </h1>
+        
 
         <section>
             <h2>Masks For Sale</h2>
-            <ul id="masks">
+            <ul id="masks"></ul>
 
+            <ul id="cart">
+                <button class='checkout'>checkout</button>
             </ul>
-            <ul id="cart"></ul>
         </section>
     </body>
 </html>

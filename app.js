@@ -4,7 +4,7 @@ window.addEventListener('load', function() {
 
 
 let masks = [
-    {
+    {   
         name: 'Keaton Mask',
         price: '10 rupees', 
     },
@@ -43,6 +43,8 @@ let masks = [
 
 ];
 
+
+
 function showMasks(masks) {
     let parent = document.querySelector('#masks');
     for (let i = 0; i < masks.length; i++) {
@@ -51,10 +53,27 @@ function showMasks(masks) {
 
         mask.innerHTML = Mustache.render(
             document.querySelector('#mask-template').innerHTML,
-            { name: masks[i].name,
+            { image: masks[i].image,  
+              name: masks[i].name,
               price: masks[i].price,
             }
         );
     parent.appendChild(mask);
+
+    let addButton = mask.querySelector('.add');
+        addButton.addEventListener('click', function () {
+            console.log('clicked btn');
+            addMask(cart[i]);
+        });
+    }
+}
+
+
+let cart = [{}];
+
+function addMask(mask) {
+    cart = document.querySelector('#cart');
+    for (let i = 0; i < cart.length; i++) {
+        
     }
 }
