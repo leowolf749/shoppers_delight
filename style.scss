@@ -32,14 +32,16 @@ section {
         @include grid-column(8);
         text-align: center;
         color: floralwhite;
+        margin-right: 30px;
         padding: 1rem;
         border-bottom: 1px solid floralwhite;
+        border-top: 1px solid floralwhite;
     }
 
     #masks {
         @include grid-column(8);
         @include grid-row();
-        padding: 0rem;
+        margin-right: 30px;
 
         li {
             @include grid-column(4);
@@ -67,5 +69,13 @@ section {
                 margin-left: 30%;
             }
         }
+    }
+
+    #cart {
+        @include grid-column(4);
+        width: 20%;
+        height: 200px;
+        background-color: floralwhite;
+        margin-right: 50px;
     }
 }

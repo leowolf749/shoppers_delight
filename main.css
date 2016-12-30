@@ -1321,8 +1321,10 @@ section {
     padding-right: 0.625rem;
     text-align: center;
     color: floralwhite;
+    margin-right: 30px;
     padding: 1rem;
-    border-bottom: 1px solid floralwhite; }
+    border-bottom: 1px solid floralwhite;
+    border-top: 1px solid floralwhite; }
     @media screen and (min-width: 40em) {
       section h2 {
         padding-left: 0.9375rem;
@@ -1337,7 +1339,7 @@ section {
     max-width: 75rem;
     margin-left: auto;
     margin-right: auto;
-    padding: 0rem; }
+    margin-right: 30px; }
     @media screen and (min-width: 40em) {
       section #masks {
         padding-left: 0.9375rem;
@@ -1376,5 +1378,20 @@ section {
         margin-left: 30%; }
       section #masks li img {
         margin-left: 30%; }
+  section #cart {
+    width: 33.33333%;
+    float: left;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    width: 20%;
+    height: 200px;
+    background-color: floralwhite;
+    margin-right: 50px; }
+    @media screen and (min-width: 40em) {
+      section #cart {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem; } }
+    section #cart:last-child:not(:first-child) {
+      float: right; }
 
 /*# sourceMappingURL=main.css.map */
