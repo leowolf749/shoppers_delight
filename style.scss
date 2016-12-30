@@ -3,16 +3,69 @@
 @include foundation-global-styles;
 @include foundation-grid;
 
+body {
+    background-color: indianred;
+}
+
+
 h1 {
     background-color: indigo;
-    color: mediumpurple;
+    color: floralwhite;
     font-size: 2em;
-    border: 10px solid indianred;
+    border: 10px double indianred;
     text-align: center;
+    margin: 10px;
+    padding: 20px;
 
     .quote {
         font-size: .4em;
-        color: floralwhite;
+        color: mediumpurple;
         margin: 2px;
+        padding: 10px;
+    }
+}
+
+section {
+    @include grid-row();
+
+    h2 {
+        @include grid-column(8);
+        text-align: center;
+        color: floralwhite;
+        padding: 1rem;
+        border-bottom: 1px solid floralwhite;
+    }
+
+    #masks {
+        @include grid-column(8);
+        @include grid-row();
+        padding: 0rem;
+
+        li {
+            @include grid-column(4);
+            list-style-type: none;
+            padding-left: 0rem;
+            padding-right: 0rem;
+            padding-top: 3rem;
+
+
+            p { 
+                color: floralwhite;
+                text-align: center;
+            }
+
+            .add {
+                background-color: indigo;
+                color: mediumpurple;
+                padding: 5px;
+                border-radius: 8px;
+                position: relative;
+                margin-left: 30%;
+            }
+
+            img {
+                margin-left: 30%;
+            }
+        }
     }
 }

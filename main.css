@@ -1288,15 +1288,93 @@ button {
     margin-left: 0;
     margin-right: 0;
     float: left; } }
+body {
+  background-color: indianred; }
+
 h1 {
   background-color: indigo;
-  color: mediumpurple;
+  color: floralwhite;
   font-size: 2em;
-  border: 10px solid indianred;
-  text-align: center; }
+  border: 10px double indianred;
+  text-align: center;
+  margin: 10px;
+  padding: 20px; }
   h1 .quote {
     font-size: .4em;
+    color: mediumpurple;
+    margin: 2px;
+    padding: 10px; }
+
+section {
+  max-width: 75rem;
+  margin-left: auto;
+  margin-right: auto; }
+  section::before, section::after {
+    content: ' ';
+    display: table; }
+  section::after {
+    clear: both; }
+  section h2 {
+    width: 66.66667%;
+    float: left;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    text-align: center;
     color: floralwhite;
-    margin: 2px; }
+    padding: 1rem;
+    border-bottom: 1px solid floralwhite; }
+    @media screen and (min-width: 40em) {
+      section h2 {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem; } }
+    section h2:last-child:not(:first-child) {
+      float: right; }
+  section #masks {
+    width: 66.66667%;
+    float: left;
+    padding-left: 0.625rem;
+    padding-right: 0.625rem;
+    max-width: 75rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0rem; }
+    @media screen and (min-width: 40em) {
+      section #masks {
+        padding-left: 0.9375rem;
+        padding-right: 0.9375rem; } }
+    section #masks:last-child:not(:first-child) {
+      float: right; }
+    section #masks::before, section #masks::after {
+      content: ' ';
+      display: table; }
+    section #masks::after {
+      clear: both; }
+    section #masks li {
+      width: 33.33333%;
+      float: left;
+      padding-left: 0.625rem;
+      padding-right: 0.625rem;
+      list-style-type: none;
+      padding-left: 0rem;
+      padding-right: 0rem;
+      padding-top: 3rem; }
+      @media screen and (min-width: 40em) {
+        section #masks li {
+          padding-left: 0.9375rem;
+          padding-right: 0.9375rem; } }
+      section #masks li:last-child:not(:first-child) {
+        float: right; }
+      section #masks li p {
+        color: floralwhite;
+        text-align: center; }
+      section #masks li .add {
+        background-color: indigo;
+        color: mediumpurple;
+        padding: 5px;
+        border-radius: 8px;
+        position: relative;
+        margin-left: 30%; }
+      section #masks li img {
+        margin-left: 30%; }
 
 /*# sourceMappingURL=main.css.map */
