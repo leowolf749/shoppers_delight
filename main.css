@@ -1359,7 +1359,10 @@ section {
       list-style-type: none;
       padding-left: 0rem;
       padding-right: 0rem;
-      padding-top: 3rem; }
+      padding-top: 3rem;
+      padding-bottom: 1rem;
+      background-color: mediumpurple;
+      border: 5px solid indianred; }
       @media screen and (min-width: 40em) {
         section #masks li {
           padding-left: 0.9375rem;
@@ -1371,27 +1374,38 @@ section {
         text-align: center; }
       section #masks li .add {
         background-color: indigo;
-        color: mediumpurple;
+        color: floralwhite;
         padding: 5px;
         border-radius: 8px;
         position: relative;
         margin-left: 30%; }
       section #masks li img {
         margin-left: 30%; }
-  section #cart {
+  section #cartContainer {
     width: 33.33333%;
     float: left;
     padding-left: 0.625rem;
     padding-right: 0.625rem;
     width: 20%;
-    height: 200px;
+    height: 400px;
     background-color: floralwhite;
     margin-right: 50px; }
     @media screen and (min-width: 40em) {
-      section #cart {
+      section #cartContainer {
         padding-left: 0.9375rem;
         padding-right: 0.9375rem; } }
-    section #cart:last-child:not(:first-child) {
+    section #cartContainer:last-child:not(:first-child) {
       float: right; }
+    section #cartContainer #cart {
+      display: block;
+      height: 80%;
+      padding: 0; }
+    section #cartContainer .checkout {
+      display: block;
+      background-color: mediumpurple;
+      color: floralwhite;
+      margin-left: 30%;
+      padding: 5px;
+      border-radius: 8px; }
 
 /*# sourceMappingURL=main.css.map */

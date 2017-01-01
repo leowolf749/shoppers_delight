@@ -49,6 +49,9 @@ section {
             padding-left: 0rem;
             padding-right: 0rem;
             padding-top: 3rem;
+            padding-bottom: 1rem;
+            background-color: mediumpurple;
+            border: 5px solid indianred;
 
 
             p { 
@@ -58,7 +61,7 @@ section {
 
             .add {
                 background-color: indigo;
-                color: mediumpurple;
+                color: floralwhite;
                 padding: 5px;
                 border-radius: 8px;
                 position: relative;
@@ -71,11 +74,29 @@ section {
         }
     }
 
-    #cart {
+    #cartContainer {
         @include grid-column(4);
         width: 20%;
-        height: 200px;
+        height: 400px;
         background-color: floralwhite;
         margin-right: 50px;
+
+        #cart {
+            display: block;
+            height: 80%;
+            padding: 0;
+
+        }
+
+        .checkout {
+            display: block;
+            background-color: mediumpurple;
+            color: floralwhite;
+            margin-left: 30%;
+            padding: 5px;
+            border-radius: 8px;
+
+           
+        }
     }
 }

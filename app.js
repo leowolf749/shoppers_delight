@@ -61,10 +61,11 @@ function showMasks(masks) {
     parent.appendChild(mask);
 
     let addButton = mask.querySelector('.add');
-        addButton.addEventListener('click', function () {
+        addButton.addEventListener('click', function() {
             console.log('clicked btn');
             addMask(cart[i]);
         });
+        
     }
 }
 
@@ -72,8 +73,9 @@ function showMasks(masks) {
 let cart = [{}];
 
 function addMask(mask) {
-    cart = document.querySelector('#cart');
+    items = document.querySelector('#cart');
     for (let i = 0; i < cart.length; i++) {
         
+
     }
 }
