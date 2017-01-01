@@ -85,6 +85,16 @@ section {
             display: block;
             height: 80%;
             padding: 0;
+            border: 2px double indianred;
+            overflow-y: scroll;
+
+            li {
+                border-bottom: 1px dotted indigo;
+                p {
+                    margin: 0px;
+                    margin-left: 10px;
+                }
+            }
 
         }
 

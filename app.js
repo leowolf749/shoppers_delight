@@ -6,39 +6,39 @@ window.addEventListener('load', function() {
 let masks = [
     {   
         name: 'Keaton Mask',
-        price: '10 rupees', 
+        price: 10 + ' rupees', 
     },
     {
         name: 'Skull Mask',
-        price: '20 rupees',
+        price: 20 + ' rupees',
     },
     {
         name: 'Spooky Mask',
-        price: '30 rupees',
+        price: 30 + ' rupees',
     },
     {
         name: 'Bunny Hood',
-        price: '50 rupees',
+        price: 50 + ' rupees',
     },
     {
         name: 'Mask of Truth',
-        price: '100 rupees',
+        price: 100 + ' rupees',
     },
         {
         name: 'Gerudo Mask',
-        price: '200 rupees',
+        price: 200 + ' rupees',
     },
         {
         name: 'Goron Mask',
-        price: '200 rupees',
+        price: 200 + ' rupees',
     },
         {
         name: 'Zora Mask',
-        price: '200 rupees',
+        price: 200 + ' rupees',
     },
         {
         name: 'Majoras Mask',
-        price: '10,000 rupees',
+        price: 10000 + ' rupees',
     },
 
 ];
@@ -60,22 +60,23 @@ function showMasks(masks) {
         );
     parent.appendChild(mask);
 
+    let cart = document.querySelector('#cart');
     let addButton = mask.querySelector('.add');
         addButton.addEventListener('click', function() {
-            console.log('clicked btn');
-            addMask(cart[i]);
+            console.log('added item');
+            
+            let cartItem = document.createElement('li');
+
+            cartItem.innerHTML = Mustache.render(
+                document.querySelector('#cart-template').innerHTML,
+                { name: masks[i].name,
+                  price: masks[i].price,  
+                }
+            );
+            cart.appendChild(cartItem);
         });
         
     }
 }
 
 
-let cart = [{}];
-
-function addMask(mask) {
-    items = document.querySelector('#cart');
-    for (let i = 0; i < cart.length; i++) {
-        
-
-    }
-}

@@ -1399,7 +1399,14 @@ section {
     section #cartContainer #cart {
       display: block;
       height: 80%;
-      padding: 0; }
+      padding: 0;
+      border: 2px double indianred;
+      overflow-y: scroll; }
+      section #cartContainer #cart li {
+        border-bottom: 1px dotted indigo; }
+        section #cartContainer #cart li p {
+          margin: 0px;
+          margin-left: 10px; }
     section #cartContainer .checkout {
       display: block;
       background-color: mediumpurple;
