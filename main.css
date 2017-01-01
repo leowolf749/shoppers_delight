@@ -1387,7 +1387,7 @@ section {
     padding-left: 0.625rem;
     padding-right: 0.625rem;
     width: 20%;
-    height: 400px;
+    height: 580px;
     background-color: floralwhite;
     margin-right: 50px; }
     @media screen and (min-width: 40em) {
@@ -1398,7 +1398,7 @@ section {
       float: right; }
     section #cartContainer #cart {
       display: block;
-      height: 80%;
+      height: 70%;
       padding: 0;
       border: 2px double indianred;
       overflow-y: scroll; }
@@ -1406,11 +1406,16 @@ section {
         border-bottom: 1px dotted indigo; }
         section #cartContainer #cart li p {
           margin: 0px;
-          margin-left: 10px; }
+          margin-left: 10px;
+          font-size: .85em; }
+    section #cartContainer p {
+      margin: 0px;
+      font-size: .85em; }
     section #cartContainer .checkout {
       display: block;
       background-color: mediumpurple;
       color: floralwhite;
+      margin-top: 30px;
       margin-left: 30%;
       padding: 5px;
       border-radius: 8px; }
