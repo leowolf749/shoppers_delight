@@ -63,7 +63,7 @@ function showMasks(masks) {
     let cart = document.querySelector('#cart');
     let addButton = mask.querySelector('.add');
         addButton.addEventListener('click', function() {
-            console.log('added item');
+            console.log('added ' + masks[i].name + ' to cart');
             
             let cartItem = document.createElement('li');
 
@@ -74,6 +74,10 @@ function showMasks(masks) {
                 }
             );
             cart.appendChild(cartItem);
+
+            let subTotal = document.querySelector('.subtotal');
+                subTotal = 'Subtotal: ' + masks[i].price;
+                console.log(subTotal);
         });
         
     }

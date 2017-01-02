@@ -1387,7 +1387,7 @@ section {
     padding-left: 0.625rem;
     padding-right: 0.625rem;
     width: 20%;
-    height: 580px;
+    height: 400px;
     background-color: floralwhite;
     margin-right: 50px; }
     @media screen and (min-width: 40em) {
@@ -1398,7 +1398,7 @@ section {
       float: right; }
     section #cartContainer #cart {
       display: block;
-      height: 70%;
+      height: 60%;
       padding: 0;
       border: 2px double indianred;
       overflow-y: scroll; }
