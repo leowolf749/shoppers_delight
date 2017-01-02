@@ -5,24 +5,37 @@
 
 body {
     background-color: indianred;
+    font-family: Montserrat;
 }
 
 
 h1 {
     background-color: indigo;
     color: floralwhite;
-    font-size: 2em;
+    font-size: 4em;
     border: 10px double indianred;
     text-align: center;
     margin: 10px;
     padding: 20px;
 
+    .triforce {
+        height: 50px;
+    }
+
+    .salesman {
+        display: block;
+        margin: auto;
+        height: 100px;
+    }
+
     .quote {
-        font-size: .4em;
+        font-size: .3em;
+        font-style: italic;
         color: mediumpurple;
         margin: 2px;
         padding: 10px;
     }
+
 }
 
 section {
@@ -36,6 +49,12 @@ section {
         padding: 1rem;
         border-bottom: 1px solid floralwhite;
         border-top: 1px solid floralwhite;
+
+        .skullKid {
+            height: 100px;
+            width: 100px;
+            margin: 0px 60px;
+        }
     }
 
     #masks {
@@ -69,7 +88,10 @@ section {
             }
 
             img {
-                margin-left: 30%;
+                display: block;
+                margin: auto;
+                height: 120px;
+                width: 100px;
             }
         }
     }
@@ -94,6 +116,7 @@ section {
                     margin: 0px;
                     margin-left: 10px;
                     font-size: .85em;
+                    
                 }
             }
 

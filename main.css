@@ -1289,18 +1289,26 @@ button {
     margin-right: 0;
     float: left; } }
 body {
-  background-color: indianred; }
+  background-color: indianred;
+  font-family: Montserrat; }
 
 h1 {
   background-color: indigo;
   color: floralwhite;
-  font-size: 2em;
+  font-size: 4em;
   border: 10px double indianred;
   text-align: center;
   margin: 10px;
   padding: 20px; }
+  h1 .triforce {
+    height: 50px; }
+  h1 .salesman {
+    display: block;
+    margin: auto;
+    height: 100px; }
   h1 .quote {
-    font-size: .4em;
+    font-size: .3em;
+    font-style: italic;
     color: mediumpurple;
     margin: 2px;
     padding: 10px; }
@@ -1331,6 +1339,10 @@ section {
         padding-right: 0.9375rem; } }
     section h2:last-child:not(:first-child) {
       float: right; }
+    section h2 .skullKid {
+      height: 100px;
+      width: 100px;
+      margin: 0px 60px; }
   section #masks {
     width: 66.66667%;
     float: left;
@@ -1380,7 +1392,10 @@ section {
         position: relative;
         margin-left: 30%; }
       section #masks li img {
-        margin-left: 30%; }
+        display: block;
+        margin: auto;
+        height: 120px;
+        width: 100px; }
   section #cartContainer {
     width: 33.33333%;
     float: left;
