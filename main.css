@@ -1396,7 +1396,7 @@ section {
         margin: auto;
         height: 120px;
         width: 100px; }
-  section #cartContainer {
+  section #cart {
     width: 33.33333%;
     float: left;
     padding-left: 0.625rem;
@@ -1406,27 +1406,27 @@ section {
     background-color: floralwhite;
     margin-right: 50px; }
     @media screen and (min-width: 40em) {
-      section #cartContainer {
+      section #cart {
         padding-left: 0.9375rem;
         padding-right: 0.9375rem; } }
-    section #cartContainer:last-child:not(:first-child) {
+    section #cart:last-child:not(:first-child) {
       float: right; }
-    section #cartContainer #cart {
+    section #cart ul {
       display: block;
       height: 60%;
       padding: 0;
       border: 2px double indianred;
       overflow-y: scroll; }
-      section #cartContainer #cart li {
+      section #cart ul li {
         border-bottom: 1px dotted indigo; }
-        section #cartContainer #cart li p {
+        section #cart ul li p {
           margin: 0px;
           margin-left: 10px;
           font-size: .85em; }
-    section #cartContainer p {
+    section #cart p {
       margin: 0px;
       font-size: .85em; }
-    section #cartContainer .checkout {
+    section #cart .checkout {
       display: block;
       background-color: mediumpurple;
       color: floralwhite;

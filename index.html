@@ -9,7 +9,7 @@
         <script id="mask-template" type="x-mustache-template">
             <img src={{ image }}>
             <p>{{ name }}</p>
-            <p>{{ price }}</p>
+            <p>{{ price }} Rupees</p>
             <button class='add'>add to cart</button>
         </script>
 
@@ -35,11 +35,11 @@
             
             <ul id="masks"></ul>
             
-            <div id="cartContainer">
-                <ul id="cart"></ul>
-                <p class='subtotal'>Subtotal:</p>
-                <p class='tax'>Tax:</p>
-                <p class='total'>Total:</p>
+            <div id="cart">
+                <ul></ul>
+                <p>Subtotal: <span id="subtotal">0</span> Rupees</p>
+                <p>Tax: <span id="tax">0</span> Rupees</p>
+                <p>Total: <span id="total">0</span> Rupees</p>
                 <button class='checkout'>checkout</button>
             </div>
         </section>

@@ -96,14 +96,14 @@ section {
         }
     }
 
-    #cartContainer {
+    #cart {
         @include grid-column(4);
         width: 20%;
         height: 400px;
         background-color: floralwhite;
         margin-right: 50px;
 
-        #cart {
+        ul {
             display: block;
             height: 60%;
             padding: 0;
